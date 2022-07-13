@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Management</title>
     <link rel="stylesheet" href="index.css">
 
 </head>
 <body>
     <h2>Team Management</h2>
-    <table cellpadding="10" cellspacing="2" align="center">
+    <table cellpadding="10" cellspacing="2" aria-busy="center">
         <th class="row1">Project Name</th>
         <tr>
             <td class="col1">Project Name</td>
@@ -28,32 +26,19 @@
             </td>
         </tr>
 
-        <th class="row1">Start Date</th>
+        <th class="row3">Start Date</th>
         <tr>
             <td class="col1">Start Date</td>
-            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
+            <td class="col2"><input type="date" name="Start Date" id="Date" class="star tDate"></td>
         </tr>
         <th class="row1">End Date</th>
         <tr>
             <td class="col1">End Date</td>
-            <td class="col2"><input type="date" name="End date" id="EDate" class="endDate"></td>
-        </tr>
-
-        <th class="row1">Priority</th>
-        <tr>
-            <td class="col1">Priority</td>
-            <td class="col2">
-                <input type="radio" name="priority" id="high" value="High"> High
-                <input type="radio" name="priority" id="average" value="Average"> Average
-                <input type="radio" name="priority" id="low" value="Low"> Low
-            </td>
-        </tr>
-        <th class="row1">Description</th>
+            <td class="col2"><input type="date" name="End date" id="Date" class="end Date"></td>
         <tr>
             <td class="col1">Description</td>
             <td class="col2"><textarea name="description" id="description" cols="35" rows="4"></textarea></td>
-        </tr>
-        <tr colspan="2" align="center">
+        
             <td>
                 <button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button>
             </td>
@@ -61,7 +46,7 @@
                 <button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button>
             </td>
         </tr>
-        <tr colspan="1" align="center">
+        <tr colspan="1" aria-live="center">
             <td>
                 <button type="reset" class="reset2" onclick="resetProjectDetails()">Clear</button>
             </td>

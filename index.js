@@ -1,10 +1,9 @@
 function submitProjectDetails() {
-    var ProjectName = document.getElementById("PName")
+    var TeamName = document.getElementById("PName")
     var pAssigned = document.getElementById("projectAssigned")
     var sDate = document.getElementById("SDate")
     var eDate = document.getElementById("EDate")
     var Prior = document.querySelector('input[name="priority"]')
-    var Description = document.getElementById("description")
  // project name validation
     if (ProjectName.value == "") {
         alert("Project name field cannot be empty");
@@ -29,7 +28,7 @@ function submitProjectDetails() {
     if (eDate.value == 0) {
         alert("Please enter the end date ");
     } else {
-        alert(document.getElementById("EDate").value);
+        alert(document.getElementById("Date").value);
     }
    //priority validation
     var Prior = document.querySelector('input[name="priority"]:checked');
