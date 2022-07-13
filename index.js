@@ -1,8 +1,8 @@
 function submitProjectDetails() {
     var TeamName = document.getElementById("PName")
     var pAssigned = document.getElementById("projectAssigned")
-    var sDate = document.getElementById("SDate")
-    var eDate = document.getElementById("EDate")
+    var Date = document.getElementById("SDate")
+    var Date = document.getElementById("EDate")
     var Prior = document.querySelector('input[name="priority"]')
  // project name validation
     if (ProjectName.value == "") {
