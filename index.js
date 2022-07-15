@@ -17,19 +17,6 @@ function submitProjectDetails() {
     } else {
         alert(pAssigned.options[pAssigned.selectedIndex].value);
     }
-  // Date validation
-    // start date
-    if (sDate.value == "") {
-        alert(" Please Enter the Starting date");
-    } else {
-        alert(document.getElementById("SDate").value);
-    }
-    // End date
-    if (eDate.value == 0) {
-        alert("Please enter the end date ");
-    } else {
-        alert(document.getElementById("Date").value);
-    }
    //priority validation
     var Prior = document.querySelector('input[name="priority"]:checked');
 
