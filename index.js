@@ -1,25 +1,24 @@
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incomplete-tasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var taskInput=document.getElementById("new-task");
+var addButton=document.getElementsByTagName("button")[0];
+var incompleteTaskHolder=document.getElementById("incomplete-tasks");
+var completedTasksHolder=document.getElementById("completed-tasks");
 
 
-//New task list item
 var createNewTaskElement=function(taskString){
 
 	var listItem=document.createElement("li");
 
-	//input (checkbox)
-	var checkBox=document.createElement("input");//checkbx
-	//label
-	var label=document.createElement("label");//label
-	//input (text)
-	var editInput=document.createElement("input");//text
-	//button.edit
-	var editButton=document.createElement("button");//edit button
+	input (checkbox)
+	var checkBox=document.createElement("input");
+	label
+	var label=document.createElement("label");
+	input (text)
+	var editInput=document.createElement("input");
+	button.edit
+	var editButton=document.createElement("button");
 
-	//button.delete
-	var deleteButton=document.createElement("button");//delete button
+	button.delete
+	var deleteButton=document.createElement("button");
 
 	label.innerText=taskString;
 
@@ -27,7 +26,7 @@ var createNewTaskElement=function(taskString){
 	checkBox.type="checkbox";
 	editInput.type="text";
 
-	editButton.innerText="Edit";//innerText encodes special characters, HTML does not.
+	editButton.innerText="Edit";
 	editButton.className="edit";
 	deleteButton.innerText="Delete";
 	deleteButton.className="delete";
@@ -113,9 +112,7 @@ var taskCompleted=function(){
 
 var taskIncomplete=function(){
 		console.log("Incomplete Task...");
-//Mark task as incomplete.
-	//When the checkbox is unchecked
-		//Append the task list item to the #incomplete-tasks.
+
 		var listItem=this.parentNode;
 	incompleteTaskHolder.appendChild(listItem);
 			bindTaskEvents(listItem,taskCompleted);
@@ -126,8 +123,6 @@ var taskIncomplete=function(){
 var ajaxRequest=function(){
 	console.log("AJAX Request");
 }
-
-//The glue to hold it all together.
 
 
 //Set the click handler to the addTask function.

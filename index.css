@@ -1,6 +1,6 @@
 /* Basic Style */
 body {
-    background: rgb(21, 188, 249);
+    background: rgb(7, 136, 95);
     color:black;
     font-family: Lato, sans-serif;
   }
@@ -82,7 +82,7 @@ body {
     width: 237px;
     padding: 0 0 0 11px;
   }
-  li >  input[type="text"] {
+  input[type="text"] {
     width: 226px;
   }
   li > .delete:hover {
