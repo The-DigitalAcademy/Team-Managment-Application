@@ -1,41 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>TEAM MANAGMENT</title>
+    <link rel="stylesheet" href="index.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">TEAM MANAGMENT</label><input id="new-task" type="text"><button>Add</button>
+      </p>
+      
+      <h3>Project</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+      
+      
 
-<head>
-    <title>Team Management</title>
-    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
 
-</head>
-<body>
-    <h2>Team Management</h2>
-    <table cellpadding="10" cellspacing="2" aria-busy="center">
-        <th class="row1">Project Name</th>
-        <tr>
-            <td class="col1">Project Name</td>
-            <td class="col2"><input type="text" name="project name" id="PName" placeholder="project name"></td>
-        </tr>
-        <th class="row1">Assigned to</th>
-        <tr>
-            <td class="col1">Assigned to</td>
-            <td class="col1">
-                <select name="person" id="projectAssigned">
-                    <option value="Mr Shazi">Mr Shazi</option>
-                    <option value="Mrs Khumalo">Mrs Khumalo</option>
-                    <option value="Miss Ndlovu">Miss Ndlovu</option>
-                </select>
-                <button type="submit" class="submit1"  onclick="submitProject()">Submit</button>
-            </td>
-            <td>
-                <button type="reset" class="reset1" onclick="resetProject()">Clear</button>
-            </td>
-        </tr>
-        <tr colspan="1" ali="center">
-            <td>
-
-            </td>
-        </tr>
-    </table>
-    <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
