@@ -84,10 +84,6 @@ var containsClass=listItem.classList.contains("editMode");
 		listItem.classList.toggle("editMode");
 }
 
-
-
-
-//Delete task.
 var deleteTask=function(){
 		console.log("Delete Task...");
 

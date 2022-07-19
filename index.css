@@ -5,7 +5,7 @@ body {
     font-family: Lato, sans-serif;
   }
   .container {
-    display: block;
+    display: 45;
     width: 500px;
     margin: 100px auto 5;
   }
