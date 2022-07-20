@@ -5,9 +5,9 @@ body {
     font-family: Lato, sans-serif;
   }
   .container {
-    display: 45;
-    width: 500px;
-    margin: 100px auto 5;
+    display: block;
+    width: 400px;
+    margin: 250px auto 5;
   }
   ul {
     margin: 0;
