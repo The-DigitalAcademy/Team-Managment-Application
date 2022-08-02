@@ -1,22 +1,33 @@
-<html>
-  <head>
-    <title>TEAM MANAGMENT</title>
-    <link rel="stylesheet" href="index.css" type="text/css" media="screen" charset="utf-8">    
-  </head>
-  <body>
-    <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEAM MANAGEMENT APP</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
 
-        <label for="new-task">TEAM MANAGMENT</label>
-        <input id="new-task" type="text"><button>Add</button>
-      
-      <h3>Project</h3>
-      <ul id="incomplete-tasks">
-        <li><input type="checkbox"><label></label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
-      </ul>
-      
-      
+  <h1>Team Management Application</h1>
+  
+  <input type="" id="inputteam" placeholder="Add team"><br><br>
+  <button onclick="addTeam()">Add team</button><br><br>
 
-    <script type="text/javascript" src="index.js"></script>
+  <input type="" id="inputteam" placeholder="Add team"><br><br>
 
-  </body>
+  <select id="selectData">
+    <option value="">DA</option>
+    <option value="">PWD</option>
+    <option value="">FOXTORT</option>
+  </select>
+
+  <br><br>
+  <button onclick="addName()">Add name</button>
+
+  <div class="displaydata">
+  <h3 id="screenTeam">DA</h3>
+  </div>
+  <script src="./index.js"></script>
+</body>
 </html>
