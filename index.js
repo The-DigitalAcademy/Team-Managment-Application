@@ -4,10 +4,15 @@ var inputName = [];
 var screenData = document.getElementById('screenData')
 
 function addTeam() {
-	var inputteam = document.getElementById('inputteam').value
+	var usersTeam = document.getElementById('usersTeam').value
 
-	inputTeam.push(inputteam)
-	document.getElementById('inputteam').value = ''
+	if (usersTeam == '') {
+		alert('?')
+		return
+	}
+
+	inputTeam.push(usersTeam)
+	document.getElementById('usersTeam').value = ''
 
 	displayTeam();
 }
@@ -15,17 +20,17 @@ function addTeam() {
 function displayTeam() {
 	selectData.innerHTML = `<option value="">Select team</option>`
 
-	for (let g = 0; g < inputTeam.length; g++) {
+	for (let i = 0; i < inputTeam.length; i++) {
 		
-		selectData.innerHTML += `<option value="${inputTeam[g]}">${inputTeam[g]}</option>`
+		selectData.innerHTML += `<option value="${inputTeam[i]}"> ${inputTeam[i]} </option>`
 		
 	}
 }
 
 function addName() {
-	var inputname = document.getElementById('inputname').value
+	var usersName = document.getElementById('usersName').value
 
-	inputName.push({team: inputTeam, name: selectdata.value})
+	inputName.push({name: usersName, team: selectdata.value})
 
 	displayName()
 	
@@ -36,14 +41,15 @@ function displayName() {
 
 	screenTeam.innerHTML = ''
 
-	for (let g = 0; g < inputTeam.length; g++) {
-		screenTeam.innerHTML += `<h3>${inputTeam[g]}: </h3>`
+	for (var i = 0; i < inputTeam.length; i++) {
+		screenTeam.innerHTML += `<b>${inputTeam[i]}: </b>`
 		
-	for (let h = 0; h < array.length; h++) {
-		if (inputTeam[h] == inputName[g].team)
-		screenTeam.innerHTML += inputName[g].name + ','
+	for (var x = 0; x < inputName.length; x++) {
+		if (inputTeam[i] == inputName[x].team) {
+			screenTeam.innerHTML += inputName[x].name + ','
+	    }
 		
 	}
-	screenTeam.innerHTML += `<br>`
+	screenTeam.innerHTML += '<br>'
 	}
 }

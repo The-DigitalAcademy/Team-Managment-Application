@@ -9,24 +9,29 @@
 </head>
 <body>
 
-<h1>Team Management Application</h1>
+  <div class="app">
+    <h1>Team Management Application</h1>
   
-  <input type="" id="inputteam" placeholder="enter your name"><br><br>
+  <input type="" id="usersTeam" placeholder="Enter your team"><br><br>
   <button onclick="addTeam()">Add team</button><br><br>
 
-  <input type="" id="inputteam" placeholder="Amount"><br><br>
+  <input type="" id="usersName" placeholder="Enter your name"><br><br>
 
   <select id="selectData">
-    <option value="">DA</option>
-    <option value="">PWD</option>
-    <option value="">FOXTORT</option>
+    <option value="">Select team</option>
   </select>
 
   <br><br>
   <button onclick="addName()">Add name</button>
+  <br>
   <div class="displaydata">
-  <h3 id="screenTeam">DA</h3>
+
+  <p id="screenTeam"></p>
+
   </div>
+  </div>
+
+
   <script src="./index.js"></script>
 </body>
 </html>

@@ -1,25 +1,16 @@
 body{
     background-color: rgb(49, 175, 175);
-    width: 20px;
-    height: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+h1{
+    background: white;
+    border: solid 2px;
 }
 
-inputteam{
-    background-color: grey;
-    width: 10px;
-    height: 20px;
-
-}
-
-selectData{
-    background-color: white;
-    padding: 20%;
-    color: black;
-}
-
-team management application{
-    background-color: navy;
-    width: 50px;
-    height: 30px;
-    centre
+#selectData{
+    width: 100px;
 }
