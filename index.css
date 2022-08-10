@@ -18,10 +18,12 @@ h1{
 
 .app {
     color:bisque;
-    text-shadow: none;
-    width: 500px;
+    text-shadow: 45px;
+    width: 550px;
     height: 300px;
     background:whitesmoke;
     bottom: 200px;
-    margin: 0%;
+    margin: 5%;
 }
+
+.usersTeam
