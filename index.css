@@ -5,6 +5,8 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    border-radius: 5%;
+
 }
 h1{
     background: rgb(232, 95, 102);
@@ -27,6 +29,7 @@ h1{
     border-radius: 5%;
 }
 
-.usersTeam {
-    margin: 15%;
+.class {
+    border-radius: 12%;
+    
 }

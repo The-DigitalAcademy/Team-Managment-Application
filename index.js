@@ -8,7 +8,7 @@ function addTeam() {
 
 	if (usersTeam == '') {
 		alert('?')
-		return
+		
 	}
 
 	inputTeam.push(usersTeam)
