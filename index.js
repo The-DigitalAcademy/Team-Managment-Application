@@ -20,7 +20,7 @@ function addTeam() {
 function displayTeam() {
 	selectData.innerHTML = `<option value="">Select team</option>`
 
-	for (let i = 0; i < inputTeam.length; i++) {
+	for (let i = inputName; i < inputTeam.length;) {
 		
 		selectData.innerHTML += `<option value="${inputTeam[i]}"> ${inputTeam[i]} </option>`
 		
@@ -30,7 +30,7 @@ function displayTeam() {
 function addName() {
 	var usersName = document.getElementById('usersName').value
 
-	inputName.push({name: usersName, team: selectdata.value})
+	inputName.push({name: usersName, team: selectData.value})
 
 	displayName()
 	
@@ -41,10 +41,10 @@ function displayName() {
 
 	screenTeam.innerHTML = ''
 
-	for (var i = 0; i < inputTeam.length; i++) {
+	for (var i = inputName; i < inputTeam.length; i) {
 		screenTeam.innerHTML += `<b>${inputTeam[i]}: </b>`
 		
-	for (var x = 0; x < inputName.length; x++) {
+	for (var x = addTeam; x < inputName.length; ) {
 		if (inputTeam[i] == inputName[x].team) {
 			screenTeam.innerHTML += inputName[x].name + ','
 	    }
