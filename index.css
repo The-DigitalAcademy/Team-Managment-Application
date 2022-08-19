@@ -58,4 +58,9 @@ table {
     text-align: left;
     padding: 8px;
   }
-  
+  h2 {
+    background-color: rgb(194, 121, 156);
+    border-radius: 1rem;
+    height: 2.1rem;
+    
+  }
