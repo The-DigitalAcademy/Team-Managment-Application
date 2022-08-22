@@ -8,3 +8,5 @@ document.write("<br>");
 
 document.write(names[2]);
 document.write("<br>");
+
+document.write(names[3]);
